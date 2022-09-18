@@ -5,18 +5,18 @@ function CourseCard(props) {
   return (
     <div className={style.Card}>
       <img src={props.course.image} alt={props.course.title}></img>
-      <div className={style.courseDes}>
+      <div className={style.CardDes}>
         <h4>{props.course.title}</h4>
-        <div className={style.instructor}>{props.course.instructor}</div>
-        <div className={style.ratingdiv}>
-          {props.course.ratingdiv}
+        <div className={style.author}>{props.course.author}</div>
+        <div className={style.ratingDiv}>
+          {props.course.rating}
           <i className="fa fa-star" aria-hidden="true"></i>
           <i className="fa fa-star" aria-hidden="true"></i>
           <i className="fa fa-star" aria-hidden="true"></i>
           <i className="fa fa-star" aria-hidden="true"></i>
           <i className="fas fa-star-half-alt"></i>
         </div>
-        ({props.course.views})<h4>${props.course.price}</h4>
+        ({props.course.people})<h4>${props.course.price}</h4>
       </div>
     </div>
   );

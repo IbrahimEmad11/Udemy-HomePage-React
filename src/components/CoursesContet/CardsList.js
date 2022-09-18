@@ -1,5 +1,5 @@
 import React from "react";
-import CourseCard from "./Card.js";
+import CourseCard from "./Card";
 import style from "./CardListstyle.module.css";
 
 const CardList = () => {
@@ -47,7 +47,7 @@ const CardList = () => {
   ];
 
   return (
-    <ul className={style.cardlist}>
+    <ul className={style.CardList}>
       {courses.map((course) => {
         return <CourseCard key={course.id} course={course}></CourseCard>;
       })}
