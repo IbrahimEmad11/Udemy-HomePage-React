@@ -1,6 +1,6 @@
 import React from "react";
 import CourseCard from "./Card";
-import style from "./CardListstyle.module.css";
+import style from "./CardListStyle.module.css";
 
 const CardList = () => {
   let courses = [
